@@ -1,0 +1,13 @@
+Пример 17 .1 О. Настройка пассивных интерфейсов
+
+! Сначала сделать каждый субинтерфейс пассивным непосредственно
+router ospf 1
+passive-interfacegigaЬitethernet0/0 . 11
+passive-interface gigaЬitethernet0/0 . 12
+
+Или изменить значение состояния на пассивное , а некоторые интерфейсы
+сделать активными
+router ospf 1
+passive-interface defaul t
+no passive-interface serial0/0/0
+no passive-interface serial0/0/1 

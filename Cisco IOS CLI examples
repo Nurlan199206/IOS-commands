@@ -11,3 +11,6 @@ router ospf 1
 passive-interface defaul t
 no passive-interface serial0/0/0
 no passive-interface serial0/0/1 
+
+Отображение пассивных интерфейсов
+Rl # show ip ospf interface brief
